@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPTecher's Machine</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="cabecalho">
+
+        <h1>SPTecher's Machine</h1>
+        <h2>Thalita Lourenço & Marcos Hideyuki</h2>
+
+    </div>
+
+    <div class="caixa">
+
+        <h3>Digite um número decimal:</h3>
+        <input id="input_numero" type="text" placeholder="Ex: 42">
+        <br>
+        <br>
+        <select id="select_decimal">
+            <option>Octal</option>
+            <option>Hexadecimal</option>
+            <option>Binário</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="converter()">Converter</button>
+        <h3>Resultado:</h3>
+        <div id="div_decimal"></div>
+        
+    </div>
+
+    <div class="caixa">
+
+        <h3>Digite um número binário:</h3>
+        <input id="input_numero2" type="text" placeholder="Ex: 42">
+        <br>
+        <br>
+        <select id="select_binario">
+            <option>Octal</option>
+            <option>Hexadecimal</option>
+            <option>Decimal</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="converter2()">Converter</button>
+        <h3>Resultado:</h3>
+        <div id="div_binario"></div>
+        
+    </div>
+
+    <!-- <div class="caixa">
+
+        <h3>Digite um número octal:</h3>
+        <input id="input_numero" type="text" placeholder="Ex: 42">
+        <br>
+        <br>
+        <select id="select_octal">
+            <option>Decimal</option>
+            <option>Hexadecimal</option>52
+            <option>Binário</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="converter3()">Converter</button>
+        <h3>Resultado:</h3>
+        <div id="div_octal"></div>
+        
+    </div>
+
+    <div class="caixa">
+
+        <h3>Digite um número hexadecimal:</h3>
+        <input id="input_numero" type="text" placeholder="Ex: 42">
+        <br>
+        <br>
+        <select id="select_hexadecimal">
+            <option>Octal</option>
+            <option>Decimal</option>
+            <option>Binário</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="converter4()">Converter</button>
+        <h3>Resultado:</h3>
+        <div id="div_hexadecimal"></div>
+        
+    </div> -->
+
+    <script>
+
+        function converter(){
+
+            var numero = Number(input_numero.value);
+            var escolha10 = select_decimal.value;
+
+            if (escolha10 == 'Octal') {
+                div_decimal.innerHTML = numero.toString(8);
+            }
+
+            if (escolha10 == 'Hexadecimal') {
+                div_decimal.innerHTML = numero.toString(16);
+            }
+
+            if (escolha10 == 'Binário') {
+                div_decimal.innerHTML = numero.toString(2);
+            }
+
+        }
+
+        function converter2(){
+
+            var numero = Number(input_numero2.value);
+            var escolha2 = select_binario.value;
+
+            if (escolha2 == 'Octal') {
+                div_binario.innerHTML = numero.toString(8);
+            }
+
+            if (escolha2 == 'Hexadecimal') {
+                div_binario.innerHTML = numero2.toString(16);
+            }
+
+            if (escolha2 == 'Decimal') {
+                div_binario.innerHTML = parseInt(numero, 2);
+            }
+
+        }
+
+        function converter3(){
+
+            var numero = Number(input_numero.value);
+            var escolha10 = select_decimal.value;
+
+            if (escolha10 == 'Octal') {
+                div_decimal.innerHTML = numero.toString(8);
+            }
+
+            if (escolha10 == 'Hexadecimal') {
+                div_decimal.innerHTML = numero.toString(16);
+            }
+
+            if (escolha10 == 'Binário') {
+                div_decimal.innerHTML = numero.toString(2);
+            }
+
+        }
+
+        function converter4(){
+
+            var numero = Number(input_numero.value);
+            var escolha10 = select_decimal.value;
+
+            if (escolha10 == 'Octal') {
+                div_decimal.innerHTML = numero.toString(8);
+            }
+
+            if (escolha10 == 'Hexadecimal') {
+                div_decimal.innerHTML = numero.toString(16);
+            }
+
+            if (escolha10 == 'Binário') {
+                div_decimal.innerHTML = numero.toString(2);
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

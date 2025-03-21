@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPTecher's Machine</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="cabecalho">
+                <h1>SPTecher's Machine</h1>
+                <h2>Thalita Lourenço & Marcos Hideyuki</h2>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="central">
+                <div class="caixa">
+                    <h3>Digite um número decimal:</h3>
+                    <input id="input_numero" type="text" placeholder="Ex: 42">
+                    <br>
+                    <br>
+                    <select id="select_decimal">
+                        <option>Octal</option>
+                        <option>Hexadecimal</option>
+                        <option>Binário</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button onclick="converter()">Converter</button>
+                    <h3>Resultado:</h3>
+                    <div id="div_decimal"></div>
+                
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+
+            <hr>
+            <p>aakjsohashjkhfhf</p>
+
+        </footer>
+
+
+        <script>
+
+            function converter(){
+
+                var numero = Number(input_numero.value);
+                var escolha10 = select_decimal.value;
+
+                if (escolha10 == 'Octal') {
+                    div_decimal.innerHTML = numero.toString(8);
+                }
+
+                if (escolha10 == 'Hexadecimal') {
+                    div_decimal.innerHTML = numero.toString(16);
+                }
+
+                if (escolha10 == 'Binário') {
+                    div_decimal.innerHTML = numero.toString(2);
+                }
+
+            }
+
+        </script>
+
+    </body>
+    
+</html>
